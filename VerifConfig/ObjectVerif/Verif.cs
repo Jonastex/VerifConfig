@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VerifConfig
+namespace VerifConfig.ObjectVerif
 {
-    internal class Verif
+    public class Verif
     {
         public string Chemain { get; set; }
         public string Contenue { get; set; }

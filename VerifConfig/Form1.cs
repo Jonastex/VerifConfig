@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VerifConfig;
+using VerifConfig.Fonction;
 
 namespace VerifConfig
 {
@@ -50,7 +51,7 @@ namespace VerifConfig
            if (selection.Chemain != "")
             {
                 MessageBox.Show("Fichier bien selectionner");
-                string[] chaine = selection.Contenue.Split(' ');
+                GeneralVerif.Exec_fichier(selection);
             }else { MessageBox.Show("Veuillez renseigner un fichier"); }
         }
     }
